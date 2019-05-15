@@ -1,0 +1,203 @@
+/* Para que o rodapé fique abaixo do corpo tenho que colocar o body com margin */
+body {
+  margin-bottom: 60px;
+}
+
+
+/* quando eu coloco IMPORTANT a cor sobrepõe as outras cores */
+nav ul li .menu a {
+  color: #FFF !important;
+}
+/* Agora eu quero que ele altere a cor quando eu passar o mouse em cima do texto
+E para isso eu utilizo o HOVER depois que eu instanciar o local que eu quero  */
+nav ul li .menu a:hover {
+  color: #000 !important;
+}
+/* Agora vou colocar um margin-botton para que o topo fique em cima, e o body abaixo, sem que
+ O topo fique em cima do corpo 
+ Ou seja o conteudo vai ficar a partir da borda do menu que fica no topo
+header {
+  margin-bottom: 56px !important;
+} */
+/* Vou alterar a cor do jumbotron */
+.servicos {
+  background-color: #f9faff;
+  /* Para tirar a borda do canto arredondado se utiliza o border-radius: 0rem; */
+  border-radius: 0rem;
+  /* Para tirar a margem que fica entre o jumbotron e o menu tem que tirar a borda
+  E essa borda é o border-bottom: 2rem, e eu boto para 0 rem 
+  E é justamente o jumbotron que era o responsável pela margin */
+  border-bottom: 0rem;
+}
+
+/* Inicio tamanho icone */
+
+.tamanho-icone {
+  background: #fff;
+  color: #444;
+  font: 16px/1.5 "Helvetica Neue" , Helvetica, Arial, sans-serif;
+}
+
+.icon-row{
+  padding: 5px 0 0px;
+}
+
+.ion {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.preview-icon {
+  vertical-align: bottom;
+}
+
+.step {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  width: 100%;
+}
+
+.step i {
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+/* Aqui ele está dizendo que quando eu passo o mouse a opacidade estará em 3 
+step-hover é colado!! */
+.step:hover i { opacity: .3; }
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-32 { font-size: 32px; }
+.size-48 { font-size: 48px; }
+.size-64 { font-size: 64px; }
+.size-96 { font-size: 96px; }
+
+
+/* Fim tamanho icone */
+
+.depoimentos {
+  background-color: #0b4774;
+  border-radius: 0rem;
+  /* Para tirar a margem que fica entre o jumbotron e o menu tem que tirar a borda
+  E essa borda é o border-bottom: 2rem, e eu boto para 0 rem 
+  E é justamente o jumbotron que era o responsável pela margin */
+  border-bottom: 0rem;
+}
+
+.produto {
+  background-color: #f9faff;
+  border-radius: 0rem;
+  border-bottom: 0rem;
+}
+
+.cadastro-email {
+  border-radius: 0rem;
+  border-bottom: 0rem;
+  /* Atribuindo uma cor ao texto, utilizando o color. */
+  color: #fff;
+}
+
+/* Deslocamento aparente de um objeto quando se muda o ponto de observação. */
+.paralaxe-email {
+  /* Vou definir uma altura minima utilizando o min-height */
+  min-height: 400px;
+  /* Modificando a posição da imagem para fixa 
+  OU SEJA SÒ VAI MODIFICAR O TEXTO E A IMAGEM VAI FICAR !! */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.perg-resp {
+  background-color: #f9faff;
+  border-radius: 0rem;
+  border-bottom: 0rem;
+}
+/* Colocando o rodapé no seu lugar.. NO FINAL DA PAGINA */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.sobre-empresa {
+  background-color: #f9faff;
+  border-radius: 0rem;
+  border-bottom: 0rem;
+}
+
+.contato {
+  background-color: #f9faff;
+  /* Border-radius para tirar a borda arrendodada */
+  border-radius: 0rem;
+  /* E border-bottom para tirar os pxs que fica debaixo do jumbotron */
+  border-bottom: 0rem;
+}
+
+.blog {
+  background-color: #f9faff;
+  border-radius: 0rem;
+  border-bottom: 0rem;
+  /* O padding o primeiro REM é para a parte SUPERIOR E INFERIOR, e outro REM é para o lado direito e ESQUERDO */
+  padding: 2rem 2rem;
+}
+
+/* BLOG */
+/* O primeiro vai ser relacionado ao titulo mas não é só na do BLOG, vai ser em todas as páginas */
+
+.display-4 {
+	font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+	.display-4 {
+	font-size: 3rem;
+	}
+}
+
+/* Paginação */
+.blog-pagination {
+	margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+	border-radius: 2rem;
+}
+
+/* Blog posts */
+.blog-post {
+	margin-bottom: 4rem;
+}
+.blog-post-title {
+	margin-bottom: .25rem;
+	font-size: 2.5rem;
+}
+.blog-post-meta {
+	margin-bottom: 1.25rem;
+	color: #999;
+}
+/* Quando coloco text-decoration: none, quer dizer que não quero texto decorado 
+E quando eu coloco o A, estou dizendo que não quero do LINK */
+.blog-text a {
+  text-decoration: none;
+}
